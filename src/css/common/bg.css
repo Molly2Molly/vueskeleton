@@ -1,0 +1,8 @@
+.bg-blue {
+  background-color: #8282e4;
+}
+.bg-img {
+  background-image: url("/public/images/2x/1.jpg");
+  min-width: 533px;
+  min-height: 300px;
+}
