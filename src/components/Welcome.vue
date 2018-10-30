@@ -1,7 +1,6 @@
 <template>
     <div class="wrap">
         <h2 class="green ctr">welcome {{welcome}}</h2>
-        <p class="ctr">we`re waiting for you!</p>
         <input v-focus/>
     </div>
 </template>
@@ -26,10 +25,7 @@ export default {
   background-color: #f7f8f8;
   box-shadow: 1px 2px 0 3px #f7f8f8;
 }
-.ctr {
-  text-align: center;
-}
 .green {
-  color: green;
+  color: pink;
 }
 </style>

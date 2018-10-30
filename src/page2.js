@@ -1,14 +1,13 @@
 import Vue from "vue";
-import goodbye from "./components/goodbye.vue";
-import "../public/images/2x/1.jpg";
+import Welcome from "./components/Welcome.vue";
 
 new Vue({
   el: "#app",
   data: {
     msg: "addtional page"
   },
-  template: "<goodbye />",
+  template: "<Welcome />",
   components: {
-    goodbye
+    Welcome
   }
 });

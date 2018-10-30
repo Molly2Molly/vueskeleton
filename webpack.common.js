@@ -4,9 +4,6 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const devMode = process.env.NODE_ENV !== "production";
 
 // 需要被打包入口文件数组
-// 数组元素类型 {string|object}
-// string:将以默认规则生成bundle
-// object{filename|title|template} 生成的bundle.html的文件名|title标签内容|路径 /public 下的模板文件(需指定文件后缀)
 const entryList = ["index", "page2"];
 
 /**
@@ -88,10 +85,7 @@ module.exports = {
       }
     ]
   },
-  plugins: createPluginInstance(entryList).concat([
-    // vue SFCs单文件支持
-    new VueLoaderPlugin()
-  ]),
+  plugins: createPluginInstance(entryList).concat([new VueLoaderPlugin()]),
   optimization: {
     runtimeChunk: {
       name: "./js/runtime"
