@@ -14,7 +14,7 @@ module.exports = merge(common, {
     index: "index.html",
     hot: true,
     contentBase: path.resolve(__dirname, "./build"),
-    port: 3000,
+    port: 3700,
     noInfo: true
     //host: '192.168.18.145',
   },

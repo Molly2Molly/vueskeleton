@@ -1,1 +1,2 @@
-npm install --save-dev electron@1.8.8 --unsafe-perm=true --allow-root
+npm update caniuse-lite browserslist
+
